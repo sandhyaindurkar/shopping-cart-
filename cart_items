@@ -1,0 +1,10 @@
+<div ng-controller="cartController">
+        Items In Your Carts:
+        <div class="items" ng-repeat="item in cartData">
+            <span><strong>{{item.itemName}}</strong> </span>
+            <span><img src="{{item.imgSrc}}" alt="{{item.imgSrc}}"></span>
+            <span> Price: ${{item.price}}</span>
+            <span> Quantity: {{item.qty}}</span>
+        </div>
+        <span><a href="#/">Back</span>
+    </div>
